@@ -10,20 +10,6 @@ Built from scratch as a personal project to explore **game development, UI desig
 
 ---
 
-## 🎮 Preview
-
-> 📸 _Add screenshots here when available_
-
-```md id="shot1"
-![game-preview](./src/assets/screenshots/screenshot1.png)
-```
-
-```md id="shot2"
-![game-preview](assets/screenshot2.png)
-```
-
----
-
 ## ⚡ Current Features
 
 ✔ Cookie click system (manual production)

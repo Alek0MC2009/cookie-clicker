@@ -9,7 +9,7 @@ function createWindow() {
     height: 700,
     minWidth: 600,
     minHeight: 400,
-    autoHideMenuBar: false, // TODO: Cambiar a true en produccion!
+    autoHideMenuBar: true, // TODO: Cambiar a true en produccion!
     webPreferences: {
       contextIsolation: true,
       nodeIntegration: false,

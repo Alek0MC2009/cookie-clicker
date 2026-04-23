@@ -48,27 +48,49 @@ main {
 }
 .cookie-area {
   flex: 1;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: flex-start; /* en vez de center */
   padding-top: 20px; /* ajuste visual */
 }
-.izquierda button {
-  width: 160px;
-  height: 160px;
-  border-radius: 20px;
-  font-size: 18px;
+.cookie-btn {
+  width: clamp(200px, 25vw, 320px);
+  height: clamp(200px, 25vw, 320px);
+  object-fit: contain;
   cursor: pointer;
-  transition: transform 0.1s;
+  transition: transform 0.1s ease;
 }
 
-.izquierda button:active {
-  transform: scale(0.95);
+.cookie-btn:hover {
+  transform: translateY(-3px) scale(1.02);
+}
+
+.cookie-btn:active {
+  transform: scale(0.9);
 }
 .izquierda header {
   text-align: center;
 }
+.float-number {
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  pointer-events: none;
+  animation: floatUp 0.8s ease-out forwards;
+}
 
+@keyframes floatUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+}
 /* ===================== */
 /* CENTRO (HUD) */
 /* ===================== */

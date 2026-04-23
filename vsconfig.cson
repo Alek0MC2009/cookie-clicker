@@ -1,0 +1,218 @@
+{
+  // Settings json para tener el vscode como yo :)
+  // 🎨 TEMA Y ESTÉTICA
+  "workbench.colorTheme": "Catppuccin Macchiato",
+  "workbench.iconTheme": "catppuccin-macchiato",
+  "workbench.startupEditor": "none",
+  "workbench.layoutControl.enabled": false,
+  "workbench.tree.indent": 20,
+  "workbench.list.smoothScrolling": true,
+  "workbench.activityBar.location": "top",
+  "workbench.sideBar.location": "left",
+  "workbench.statusBar.visible": true,
+  "workbench.statusBar.position": "bottom",
+  "workbench.panel.defaultLocation": "bottom",
+  "workbench.panel.placement": "bottom",
+  "workbench.panel.showLabels": true,
+  "workbench.panel.opensMaximized": "never",
+  "workbench.editor.showTabs": "multiple",
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.editor.wrapTabs": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.pinnedTabSizing": "shrink",
+  "workbench.editor.splitSizing": "auto",
+  "workbench.editor.dragToOpen": true,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.tree.horizontalScrolling": false,
+  "window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
+  "window.titleSeparator": " — ",
+  "window.newWindowDimensions": "inherit",
+  "window.restoreWindows": "preserve",
+  "window.openFoldersInNewWindow": "on",
+  "window.zoomLevel": 0,
+
+  // 🖥️ APARIENCIA DEL EDITOR
+  "editor.fontFamily": "'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace",
+  "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 1.6,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.indentation": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "phase",
+  "editor.smoothScrolling": true,
+  "editor.renderWhitespace": "boundary",
+  "editor.renderControlCharacters": false,
+  "editor.renderLineHighlight": "all",
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.scrollbar.vertical": "auto",
+  "editor.scrollbar.horizontal": "auto",
+  "editor.minimap.enabled": false,
+  "editor.minimap.renderCharacters": false,
+  "editor.stickyScroll.enabled": true,
+  "editor.glyphMargin": false,
+  "editor.folding": true,
+  "editor.foldingHighlight": true,
+  "editor.lineNumbers": "on",
+  "editor.rulers": [80, 120],
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 80,
+  "editor.linkedEditing": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.occurrencesHighlight": "singleFile",
+  "editor.parameterHints.enabled": true,
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  },
+  "editor.suggestSelection": "first",
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.acceptSuggestionOnCommitCharacter": true,
+  "editor.tabCompletion": "off",
+  "editor.snippetSuggestions": "top",
+
+  // ⚡ PRODUCTIVIDAD
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // 📁 ARCHIVOS Y NAVEGACIÓN
+  "files.autoSave": "onFocusChange",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/__pycache__": true,
+    "**/*.pyc": true
+  },
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/.git/objects/**": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/package-lock.json": true
+  },
+  "breadcrumbs.enabled": true,
+  "breadcrumbs.filePath": "on",
+  "breadcrumbs.symbolPath": "on",
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "explorer.autoReveal": true,
+  "explorer.sortOrder": "default",
+  "explorer.openEditors.visible": 5,
+
+  // 🎯 FORMATEADORES POR LENGUAJE
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // 🐍 PYTHON
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.diagnosticMode": "workspace",
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+
+  // 🔥 EMMET Y HTML
+  "emmet.includeLanguages": {
+    "jinja-html": "html",
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "html.autoClosingTags": true,
+  "html.format.wrapLineLength": 0,
+  "css.validate": true,
+  "scss.validate": true,
+
+  // 📦 GIT Y CONTROL DE VERSIONES
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "gitlens.views.scm.avatars": true,
+  "gitlens.currentLine.enabled": true,
+  "gitlens.codeLens.enabled": true,
+
+  // 🧠 INTELISENSE Y AUTOCOMPLETADO
+  "path-intellisense.autoSlashAfterDirectory": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  // 🔧 TERMINAL
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.fontFamily": "'JetBrains Mono', 'Fira Code', monospace",
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.defaultLocation": "panel",
+  "terminal.integrated.tabs.enabled": true,
+  "terminal.integrated.tabs.location": "left",
+
+  // 🚀 EXTRAS
+  "problems.decorations.enabled": true,
+  "scm.diffDecorations": "all",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "chat.disableAIFeatures": true,
+  "css.lint.unknownProperties": "ignore",
+  "scss.lint.unknownProperties": "ignore",
+
+  // 🤖 GITHUB COPILOT
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false
+  },
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, bun.lock",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
+  },
+  "python.createEnvironment.trigger": "off",
+  "window.menuBarVisibility": "compact"
+}
