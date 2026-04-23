@@ -9,7 +9,7 @@ function createWindow() {
     height: 700,
     minWidth: 600,
     minHeight: 400,
-    autoHideMenuBar: true, // quita la barra fea arriba
+    autoHideMenuBar: false, // TODO: Cambiar a true en produccion!
     webPreferences: {
       contextIsolation: true,
       nodeIntegration: false,
@@ -18,8 +18,8 @@ function createWindow() {
   // haz esto parsa /src/index.html
   mainWindow.loadFile(path.join(__dirname, "src", "index.html"));
 
-  // Opcional: abrir devtools (útil mientras desarrollas)
-  // mainWindow.webContents.openDevTools();
+  // Dejo las devTools encendidas de momento
+  mainWindow.webContents.openDevTools();
 
   mainWindow.on("closed", () => {
     mainWindow = null;

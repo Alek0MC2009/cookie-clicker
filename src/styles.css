@@ -1,0 +1,136 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+  user-select: none;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+}
+
+/* ===================== */
+/* COLUMNAS BASE */
+/* ===================== */
+.izquierda,
+.centro,
+.derecha {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+/* proporciones */
+.izquierda {
+  flex: 1;
+  background: aqua;
+}
+.centro {
+  flex: 2;
+  background: blanchedalmond;
+}
+.derecha {
+  flex: 1;
+  background: aqua;
+}
+
+/* ===================== */
+/* IZQUIERDA (GAMEPLAY) */
+/* ===================== */
+.izquierda {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.cookie-area {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* en vez de center */
+  padding-top: 20px; /* ajuste visual */
+}
+.izquierda button {
+  width: 160px;
+  height: 160px;
+  border-radius: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.izquierda button:active {
+  transform: scale(0.95);
+}
+.izquierda header {
+  text-align: center;
+}
+
+/* ===================== */
+/* CENTRO (HUD) */
+/* ===================== */
+.centro {
+  justify-content: space-between;
+}
+
+/* zonas de botones */
+.derecha-buttons,
+.izquierda-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* botones HUD */
+.centro button {
+  width: 60px;
+  height: 60px;
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 12px;
+}
+
+/* ===================== */
+/* NOTICIAS */
+/* ===================== */
+.zona-noticias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  margin: 20px 0;
+  background: blue;
+  font-size: 1.2rem;
+}
+
+/* ===================== */
+/* DERECHA (TIENDA) */
+/* ===================== */
+.derecha {
+  justify-content: space-between;
+}
+
+.tienda {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.mejoras,
+.construcciones {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mejoras div,
+.construcciones div {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}

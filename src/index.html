@@ -4,15 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cookie Clicker</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="izquierda">
-      <header>
-        <h1>Cookies: <span id="cookies">0</span></h1>
-        <h2>Cookies per second: <span id="cps">0</span></h2>
-      </header>
-      <!--TODO: Cambiar el boton por imagen-->
-      <button>Click</button>
-    </div>
+    <main>
+      <aside class="izquierda">
+        <header>
+          <h1>Cookies: <span id="cookies">0</span></h1>
+          <h2>Cookies per second: <span id="cps">0</span></h2>
+        </header>
+        <!--TODO: Cambiar el boton por imagen-->
+        <div class="cookie-area">
+          <button>Click</button>
+        </div>
+      </aside>
+      <div class="centro">
+        <header>
+          <!--Botones de la derecha-->
+          <div class="derecha-buttons">
+            <button class="arriba-derecha">
+              <!--Configuracion-->
+              <i data-lucide="settings"></i>
+            </button>
+
+            <button class="abajo-derecha">
+              <!--Datos de la version-->
+              <i data-lucide="clipboard"></i>
+            </button>
+          </div>
+          <div class="zona-noticias">
+            <!--
+            Aqui desde js cambiare el texto cada cierto tiempo con par d
+            noticias en un array
+            -->
+            <p>Noticia</p>
+          </div>
+          <!--Botones de la izquierda-->
+          <div class="izquierda-buttons">
+            <button class="arriba-izquierda">
+              <!--Stats-->
+              <i data-lucide="bar-chart-3"></i>
+            </button>
+
+            <button class="abajo-izquierda">
+              <!--Rebirth-->
+              <i data-lucide="crown"></i>
+            </button>
+          </div>
+        </header>
+      </div>
+      <!--Tienda-->
+      <aside class="derecha">
+        <aside class="tienda">
+          <h2>Mejoras</h2>
+          <div class="mejoras">
+            <!--Zona de mejoras-->
+          </div>
+          <h2>Construcciones</h2>
+          <div class="construcciones">
+            <!--zona de construcciones-->
+          </div>
+        </aside>
+      </aside>
+    </main>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js"></script>
   </body>
 </html>
